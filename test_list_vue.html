@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Document</title>
+  <link rel="stylesheet" href="test.css">
+</head>
+
+<body>
+  <div id="header">
+    MY FIRST PROJECT
+  </div>
+  
+  
+    <div  class="table" id="app">
+    
+        
+            <th colspan="3">Todo App</th>  
+        
+           <div>  <input type="text"  v-model="newword" placeholder="Add your new todo"> 
+           <button type="button" class="button-succes"  @click="save">+</button></div>    
+         
+            <div v-for="(item, index) of arraywords">
+              <div>
+                {{index}} - {{item.add}}
+            
+                <button @click="edit(index)" class="button-edit"> E  </button>
+         
+              <button @click="remove(index)" class="button-danger">X
+                  <i class=""></i>
+              </button>
+              </div>
+            </div>
+               
+            <button @click="removeall(index)" class="button-danger">Eliminar todo</button>          
+                
+  </div>
+    
+  <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+</body>
+
+</html>
+<script src="test_list.js"></script>
