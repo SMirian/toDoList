@@ -52,7 +52,7 @@ var app = new Vue({
 
       });
       this.cleanFormToDo();
-
+      
     },
 
     editToDoButtonClick(toDo) {

@@ -3,6 +3,7 @@ body {
   margin: 0;
   background: linear-gradient(#aee7c1, #12b2c3);
   background-repeat: no-repeat;
+  height: 100%;
   
 }
 
@@ -28,11 +29,7 @@ input {
   box-sizing: border-box;
   resize: vertical;
 }
-#sub-tittle{
- 
 
-
-}
 .table {
   /* display: ; */
   display:table;
@@ -116,4 +113,7 @@ button {
 .to-do-list__item:hover .buttons-action {
   display: flex;
   flex-wrap: nowrap;
+}
+i{
+  color: white;
 }

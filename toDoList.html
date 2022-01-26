@@ -22,7 +22,9 @@
     <strong id="sub-tittle">Todo App</strong>
     <br>
     <input type="text" v-model="formToDo.text" placeholder="Add your new todo">
-    <button type="button" class="button--success" @click="saveToDo"><i class="fa-plus-square"></i></button>
+    <button type="button" class="button--success" @click="saveToDo">
+      <i class="far fa-plus-square"></i>
+    </button>
 
     <br>
 
@@ -32,11 +34,11 @@
         <span>{{index + 1}}- {{ item.text}}</span>
         <div class="buttons-action">
           <button class="button--small button--edit" @click="editToDoButtonClick(item)">
-            <i class="fa-plus-square"></i>
+            <i class="far fa-edit"></i>
           </button>
 
           <button class="button--small button--danger" @click="remove(index)">
-            <i class="fas fa-trash-alt"></i>
+            <i class="far fa-trash-alt"></i>
           </button>
         </div>
 
@@ -51,3 +53,4 @@
 
 </html>
 <script src="toDoList.js"></script>
+<script defer src="https://kit.fontawesome.com/09faf5376a.js"></script>
