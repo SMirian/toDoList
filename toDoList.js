@@ -2,28 +2,31 @@ var app = new Vue({
   el: "#app",
   data: {
     toDoList: [
-       {
-         text: 'xxx',
-         id: '1'
-       },
-       {
-         text: 'tes',
-         id: '4'
-       },
-       {
-         text: 'ff',
-         id: '5'
-       }
+      {
+        text: 'xxx',
+        id: '1'
+      },
+      {
+        text: 'tes',
+        id: '4'
+      },
+      {
+        text: 'ff',
+        id: '5'
+      }
     ],
     newword: "",
-
+    cont: "",
     formToDo: {
       id: null,
       text: "",
+
     },
   },
 
   methods: {
+
+    // this.toDoList.length({
     saveToDo() {
       if (!!this.formToDo.id) {
         /*
@@ -38,6 +41,7 @@ var app = new Vue({
         this.cleanFormToDo();
       } else {
         this.addToDo();
+
       }
     },
 
@@ -45,8 +49,10 @@ var app = new Vue({
       this.toDoList.push({
         text: this.formToDo.text,
         id: this.toDoList + 1,
+
       });
       this.cleanFormToDo();
+
     },
 
     editToDoButtonClick(toDo) {

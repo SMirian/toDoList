@@ -16,18 +16,16 @@
   </div>
 
   <div class="table" id="app">
-
-    <th colspan="3">Todo App</th>
+    <div class="to-do-list">
+    <br>
+    <strong id="sub-tittle">Todo App</strong>
     <div>
       <input type="text" v-model="formToDo.text" placeholder="Add your new todo">
       <button type="button" class="button--success" @click="saveToDo">+</button>
     </div>
-
-    <div class="to-do-list">
-      <div 
-        class="to-do-list__item"
-        v-for="(item, index) of toDoList"
-        :key="index">
+    <br>
+   
+      <div class="to-do-list__item" v-for="(item, index) of toDoList" :key="index">
 
         <span>{{index + 1}}- {{ item.text}}</span>
         <div class="buttons-action">
@@ -36,12 +34,14 @@
             <i class=""></i>
           </button>
         </div>
+
       </div>
     </div>
 
     <div v-if="!toDoList.length">No hay to do para mostrar</div>
 
-    <button @click="removeall()" class="button--danger">Eliminar todo</button>
+
+    <button @click="removeall()" class="button--danger">Clean All</button>
   </div>
 
   <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>

@@ -1,19 +1,27 @@
 html,
 body {
   margin: 0;
+  background: #2196F3;
+  
 }
 
 #header {
   width: 100%;
   height: auto;
   min-height: 90px;
-  background: #c666da;
+  background: #b341cb;
   background-image: none;
-  text-align: center;
-}
+  color: #fff;
+  font-family: "Segoe UI",Arial,sans-serif;
+  font-size: 40px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  }
+
 
 input {
-  width: 35%;
+  width: 25%;
   padding: 12px;
   border: 1px solid #ccc;
   border-radius: 4px;
@@ -23,12 +31,16 @@ input {
 
 .table {
   /* display: ; */
+  display:flex;
   border-collapse: separate;
   box-sizing: border-box;
   text-indent: initial;
   border-spacing: 2px;
   border-color: grey;
   text-align: center;
+  
+  justify-content: center;
+  align-items: center;
 }
 
 button {
@@ -71,6 +83,8 @@ button {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background: #ffffff;
+  padding: 10px 40px 90px 40px;
 }
 
 .to-do-list__item {
@@ -84,6 +98,7 @@ button {
   margin: 2px 0px;
   padding: 8px; /* t,r,b,l */
   /* padd */
+  border-radius: 10px;
 }
 
 .buttons-action {
