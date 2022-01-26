@@ -8,6 +8,8 @@
 
   <title>Document</title>
   <link rel="stylesheet" href="style.css">
+  <link src="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+
 </head>
 
 <body>
@@ -20,7 +22,7 @@
     <strong id="sub-tittle">Todo App</strong>
     <br>
     <input type="text" v-model="formToDo.text" placeholder="Add your new todo">
-    <button type="button" class="button--success" @click="saveToDo">+</button>
+    <button type="button" class="button--success" @click="saveToDo"><i class="fa-plus-square"></i></button>
 
     <br>
 
@@ -29,9 +31,12 @@
 
         <span>{{index + 1}}- {{ item.text}}</span>
         <div class="buttons-action">
-          <button class="button--small button--edit" @click="editToDoButtonClick(item)"> E </button>
-          <button class="button--small button--danger" @click="remove(index)">X
-            <i class=""></i>
+          <button class="button--small button--edit" @click="editToDoButtonClick(item)">
+            <i class="fa-plus-square"></i>
+          </button>
+
+          <button class="button--small button--danger" @click="remove(index)">
+            <i class="fas fa-trash-alt"></i>
           </button>
         </div>
 
