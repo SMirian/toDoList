@@ -1,13 +1,13 @@
 html,
 body {
   margin: 0;
-  background: #2196F3;
+  background: linear-gradient(#aee7c1, #12b2c3);
+  background-repeat: no-repeat;
   
 }
 
 #header {
-  width: 100%;
-  height: auto;
+ 
   min-height: 90px;
   background: #b341cb;
   background-image: none;
@@ -21,26 +21,31 @@ body {
 
 
 input {
-  width: 25%;
+  /* width: 25%; */
   padding: 12px;
   border: 1px solid #ccc;
   border-radius: 4px;
   box-sizing: border-box;
   resize: vertical;
 }
+#sub-tittle{
+ 
 
+
+}
 .table {
   /* display: ; */
-  display:flex;
-  border-collapse: separate;
+  display:table;
+   margin: 0 auto;
+   border-collapse: separate;
   box-sizing: border-box;
   text-indent: initial;
-  border-spacing: 2px;
-  border-color: grey;
+  border-color: grey; 
   text-align: center;
-  
-  justify-content: center;
-  align-items: center;
+  background-color: white; 
+  position: relative;  
+  justify-content : center;
+  align-content: center;
 }
 
 button {
@@ -81,10 +86,11 @@ button {
 .to-do-list {
   /* border: 1px solid red; */
   display: flex;
+  font: 130% status-bar;
   flex-direction: column;
   align-items: center;
   background: #ffffff;
-  padding: 10px 40px 90px 40px;
+  padding: 10px 40px 90px 10px;
 }
 
 .to-do-list__item {
